@@ -1,0 +1,257 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #eaeaea;
+    font-size: 16px;
+}
+
+/* Головна секція */
+.section-main {
+    background-color: #556b2f;
+    padding: 40px 20px 120px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.section-main-logo {
+    width: 160px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.section-main-title {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #fff;
+    font-family: 'Lora', serif;
+    font-size: 55px;
+    font-weight: 700;
+}
+
+.section-main-subtitle {
+    margin-bottom: 40px;
+    color: #fff;
+    font-size: 22px;
+}
+
+.section-main-button {
+    background-color: #8fbc8f;
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 12px 30px;
+    cursor: pointer;
+}
+
+/* Секція про магазин */
+.second-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    padding: 100px 30px;
+}
+
+.second-section-img {
+    width: 45%;
+    max-width: 500px;
+    border: 5px solid #556b2f;
+    border-radius: 20px;
+}
+
+.second-section-info {
+    margin-left: 30px;
+    max-width: 600px;
+}
+
+.section-subtitle {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #8fbc8f;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.section-title {
+    margin-top: 0;
+    margin-bottom: 40px;
+    color: #556b2f;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.second-section-text {
+    margin: 30px 0;
+    color: #666;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.second-section-name {
+    color: #556b2f;
+    text-transform: capitalize;
+}
+
+.second-section-name2 {
+    color: #8fbc8f;
+    font-weight: 700;
+}
+
+/* Колекція квітів */
+.third-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f5f5f5;
+    padding: 100px 20px;
+}
+
+.third-section-books {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.third-section-book {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.book-img {
+    height: 200px;
+    width: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.book-title {
+    margin-top: 10px;
+    margin-bottom: 6px;
+    color: #556b2f;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.book-author {
+    margin: 2px 0;
+    color: #666;
+}
+
+.book-price {
+    margin: 0;
+    color: #8fbc8f;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* Футер */
+.footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #2f4f4f;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.footer-title {
+    color: #fff;
+}
+
+.footer-text {
+    width: 600px;
+    max-width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #8fbc8f;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.footer-text-main {
+    color: #fff;
+}
+
+.footer-form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-title {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.form-input {
+    width: 400px;
+    max-width: 90vw;
+    height: 40px;
+    margin-bottom: 10px;
+    padding: 0 10px;
+    background-color: #2f4f4f;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 8px;
+}
+
+.footer-button {
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: #8fbc8f;
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+/* Відображення на телефоні */
+@media (max-width: 700px) {
+    .section-main-title {
+        font-size: 38px;
+    }
+
+    .second-section {
+        flex-direction: column;
+    }
+
+    .second-section-img {
+        width: 90%;
+    }
+
+    .second-section-info {
+        margin-left: 0;
+    }
+
+    .section-title {
+        font-size: 26px;
+        text-align: center;
+    }
+}
